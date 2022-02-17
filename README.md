@@ -10,6 +10,6 @@
 
 ## Arguments
 ```
-header: string | Header of Card
+header: string | Header of Card. Can be null
 padding: boolean | Adds padding
 ```
