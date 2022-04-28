@@ -5,6 +5,6 @@ import { Component, Input } from '@angular/core';
 	styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-	@Input() align = 1;
+	@Input() align = {};
 	constructor() { }
 }
