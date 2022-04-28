@@ -1,12 +1,8 @@
 # ngx-card
 
-## Usage
-```html
-<wcard header="Card`s #4 header" [padding]="true">
-	<strong>Card`s #4 content</strong>
-	Lorem ipsum dolor, sit amet.
-</wcard>
-```
+# Step 1: Installation ngx-stripe
+### In terminal root/client write:
+waw add ngx-stripe
 
 ## Arguments
 ```
