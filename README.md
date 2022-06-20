@@ -1,8 +1,8 @@
 # ngx-card
 
-# Step 1: Installation ngx-stripe
+# Step 1: Installation ngx-card
 ### In terminal root/client write:
-waw add ngx-stripe
+waw add ngx-card
 
 # Step 2: Write Tag(wcard)
 ###  In your user/page, you must write this code:
