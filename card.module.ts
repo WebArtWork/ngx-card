@@ -1,14 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { WacomModule } from 'wacom';
+import { CoreModule } from '@core';
 import { CardComponent } from './card.component';
 
 @NgModule({
 	imports: [
-		FormsModule,
-		CommonModule,
-		WacomModule
+		CoreModule
 	],
 	declarations: [
 		CardComponent

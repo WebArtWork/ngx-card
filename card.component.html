@@ -1,7 +1,7 @@
-<div class="card">
-	<div class="container">
-		<div [ngClass]="align">
-			<ng-content></ng-content>
-		</div>
-	</div>
+<div class="w-card" [class._pd]="padding">
+	<img src="/assets/topson.jpg" alt="" class="w-card__img">
+	<h1 *ngIf="title" class="w-card__title">{{title}}</h1>
+	<span *ngIf="subtitle" class="w-card__subtitle">{{subtitle}}</span>
+	<p *ngIf="text" class="w-card__text">{{text}}</p>
+	<ng-content></ng-content>
 </div>
