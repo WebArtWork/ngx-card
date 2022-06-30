@@ -7,9 +7,6 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
 	@Input() padding: boolean = false;
 	@Input() align: string = 'center';
-
-
-
 	@Input() image: boolean;
 	@Input() title: string;
 	@Input() subtitle: string;

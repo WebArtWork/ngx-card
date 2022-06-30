@@ -1,34 +1,41 @@
 # ngx-card
 
-# Step 1: Installation ngx-card
-### In terminal root/client write:
+## Installation
+
+```sh
 waw add ngx-card
-
-# Step 2: Write Tag(wcard)
-###  In your user/page, you must write this code:
-```
-<wcard [align]="start"> "content" </wcard>
 ```
 
-# Step 3: Importe StripeModule
-### In your user/page.component.ts you must write:
+## Usage
 ```
-export class YourComponent {
-	public start: any = {};
-	constructor() { }
-}
+html
+<div class="w-card" [class._pd]="padding">
+    <img src="{{image}}" alt="" class="w-card__img">
+    <h1 *ngIf="title" class="w-card__title">{{title}}</h1>
+    <span *ngIf="subtitle" class="w-card__subtitle">{{subtitle}}</span>
+    <p *ngIf="text" class="w-card__text">{{text}}</p>
+    <ng-content></ng-content>
+</div>
 ```
-
-# Step 4: Importe StripeModule
-### In your user/page.module.ts you must import CardModule:
 ```
 import { CardModule } from 'src/app/modules';
-
 @NgModule({
- imports: [
-  CardModule
- ]
+    imports: [
+        CardModule
+    ]
 })
 ```
 
-# Step 5: Pleasant use
+## Classes
+```
+_pd | Adds padding to a card
+_align | Aligns text to the center
+```
+
+## Nested elements with predefined styles
+```
+img | Adds image inside card with full width 
+h1 | Adds title with font-size, font-weight
+span | Adds subtitle with font-size, font-weight
+p | Adds text with font-size
+```
